@@ -17,7 +17,7 @@ RUN curl -O https://www.free-css.com/assets/files/free-css-templates/download/pa
     rm -rf spering spering.zip
 
 # Expose port 80 for HTTP traffic
-EXPOSE 80 
+EXPOSE 80 22
 
 # Healthcheck to ensure the HTTP server is running
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 CMD curl -f http://localhost:80 || exit 1
